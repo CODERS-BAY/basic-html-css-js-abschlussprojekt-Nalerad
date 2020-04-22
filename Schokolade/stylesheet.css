@@ -1,0 +1,193 @@
+:root {
+    --brown: maroon;
+    --brown: chocolate;
+    --brown: #330C00;
+    --brown: #3D1600;
+    --brown: #472000;
+    --brown: #512A09;
+    --brown: #5B3413;
+    --brown: #653E1D;
+    --brown: #6F4827;
+    --brown: #795231;
+    --brown: #D3AC8B;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(img/choco.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+}
+
+.logo img {
+    max-width: 100px;
+    margin: 5px;
+}
+
+nav li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+.custom-control {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.bi-1 {
+    flex-basis: 20%;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.bi-2 {
+    flex-basis: 80%;
+}
+
+.col-80 {
+    flex-basis: 80%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #D3AC8B;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+.col-60 {
+    flex-basis: 60%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #D3AC8B;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+.col-40 {
+    flex-basis: 40%;
+    margin: 2%;
+    opacity: 0.8;
+    justify-content: center;
+}
+
+.item {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+nav ul {
+    justify-content: space-around;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #3D1600;
+    color: #D3AC8B;
+    z-index: 50;
+
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    width: 100%;
+    transform: rotate(-3deg);
+    font-size: 7vw;
+    color: #D3AC8B;
+}
+
+h2::first-letter {
+    font-family: 'Parisienne', cursive;
+    font-size: 7vw;
+}
+
+h3::first-letter {
+    font-family: 'Parisienne', cursive;
+    font-size: 5vw;
+}
+
+h5::first-letter {
+    font-family: 'Parisienne', cursive;
+    font-size: 3vw;
+}
+
+.center-item {
+    align-items: center
+}
+
+.godown {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    font-size: 3vw;
+    color: #330C00;
+}
+
+img {
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+footer {
+    background-color: #3D1600;
+    color: #D3AC8B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-text {
+    background-color: #D3AC8B;
+    opacity: 0.8;
+    margin: 1%;
+    height: 200px;
+}
+
+.card-title {
+    background-color: #D3AC8B;
+    opacity: 0.8;
+    margin: 1%;
+    text-align: center;
+}
+
+.card-text.fg {
+    background-color: #D3AC8B;
+    opacity: 0.5;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #D3AC8B;
+}
+
+.card-body {
+    background-color: #D3AC8B;
+    text-align: justify;
+}
