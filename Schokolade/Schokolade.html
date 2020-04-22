@@ -6,43 +6,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Parisienne&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Schokolieberblog | Frontpage </title>
 </head>
 
 <body>
 
-    <header class="flex-container">
-        <div class="logo bi-1">
-            <a href="Schokolade.html"><img src="img/logo.jpg"></a>
-        </div>
-        <nav class="bi-2 item">
-            <ul class="flex-container">
-                <li><a href="Manufaktur.html">Manufaktur</a></li>
-                <li><a href="Lieblingsprodukte.html">Lieblingsprodukte</a></li>
-                <li><a href="Fotogalerie.html">Fotogalerie</a></li>
-            </ul>
+    <header class="">
+
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Manufaktur.html">Manufaktur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Lieblingsprodukte.html">Lieblingsprodukte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Fotogalerie.html">Fotogalerie</a>
+                </li>
+              </ul>
+            </div>
         </nav>
     </header>
 
 
-    <section id="s-0" class="vh-100 center-item flex-container">
+    <section id="s-0" class="flex-wrap d-flex align-items-center section-2 flex-md-nowrap">
         <h1>Mein Schokoladenwelt</h1>
         <span class="godown">
-            <a href="#s-1"><i class='fas fa-cookie-bite'></i></a>
+            <a href="#s-1"><i class='fas fa-2x fa-cookie-bite'></i></a>
         </span>
     </section>
 
-    <section id="s-1" class="vh-100 flex-container center-item section-2">
+    <section id="s-1" class="flex-wrap d-flex align-items-center align-content-center section-2 flex-md-nowrap">
         <div class="col-40 item">
-            <img src="img/02.jpg " width=50% height=50%>
+            <img src="img/02.jpg " class="img-fluid">
         </div>
         <div class="col-60 item">
             <h2>Kakao</h2>
@@ -73,10 +86,10 @@
             </p>
         </div>
         <span class="godown">
-            <a href="#s-2"><i class='fas fa-cookie-bite'></i></a>
+            <a href="#s-2"><i class='fas fa-2x fa-cookie-bite'></i></a>
         </span>
     </section>
-    <section id="s-2" class="vh-100 flex-container center-item section-3">
+    <section id="s-2" class="flex-wrap-reverse d-flex align-items-center section-2 flex-md-nowrap">
         <div class="col-60 item">
             <h2>Von Kakao bis Schokolade</h2>
             <p>
@@ -94,15 +107,15 @@
             </p>
         </div>
         <div class="col-40 item">
-            <img src="img/cadbery.jpg">
+            <img src="img/cadbery.jpg" class="img-fluid">
         </div>
         <span class="godown">
-            <a href="#s-3"><i class='fas fa-cookie-bite'></i></a>
+            <a href="#s-3"><i class='fas fa-2x fa-cookie-bite'></i></a>
         </span>
     </section>
-    <section id="s-3" class="vh-100 flex-container center-item section-4">
+    <section id="s-3" class="flex-wrap d-flex align-items-center section-2 flex-md-nowrap">
         <div class="col-40 item">
-            <img src="img/kakao.jpg">
+            <img src="img/kakao.jpg" class="img-fluid">
         </div>
         <div class="col-60 item">
             <h2>Schokoladenzutaten</h2>
@@ -128,7 +141,7 @@
                 enthalten, dafür aber
                 Milchpulver.
                 <span class="godown">
-                    <a href="#footer"><i class='fas fa-cookie-bite'></i></a>
+                    <a href="#footer"><i class='fas fa-2x fa-cookie-bite'></i></a>
                 </span>
     </section>
 
@@ -148,15 +161,9 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
