@@ -1,0 +1,61 @@
+.paragraph {
+    font-size:12pt;
+    font-family: cursive;
+    text-align:justify;
+    line-height: 0,7;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px 5px inset;
+    display: inline-block;
+    width:44%;
+    background-color:darkcyan;
+  
+    
+}
+.schoneTabele {
+    border-style: solid;
+    border-color:blue;
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:monospace;
+    font-size:12pt;
+
+}
+.background {
+    background-color: rgb(100, 237, 230);
+    opacity:75%
+}
+.heading {
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+    transform: rotate(-10deg);
+    box-shadow: 10px 10 px 5px inset;
+    min-height: 200px;
+    min-width:200px;
+}
+.liste {
+    text-align:center;
+    font-size:12pt;
+    font-family: monospace;
+    border-style: solid;
+}
+.block.element.abstand {
+    padding: 20px 20px 20px 20px;
+    font-family:monospace;
+    background-color: darkcyan;
+    border-style: solid;
+   border-width:content;
+   text-align: center;
+}
+.spalten {
+    padding:20px;
+    font-family: cursive;
+    column-count: 2;
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-width:10em;
+    text-align: justify;
+    border-style: solid;
+}

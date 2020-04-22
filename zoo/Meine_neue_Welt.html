@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Meine zweite Seite </title>
+    <link href="SSfurAufgabe2.css" rel="stylesheet">
+</head>
+
+<body style="background-image: url(bacc.jpg);">
+
+    <h1 class="custom-bg"> Meine neue Welt</h1>
+    <p > class="custom-font"<em> Ich möchte Informatik gut erlernen.</em> Dazu brauche ich auch ein HTML Buch.</p>
+    <h2> KI und Robotik </h2>
+
+    <p class="custom-font">Künstliche Intelligenz (KI), auch artifizielle Intelligenz (AI bzw. A. I.), englisch
+        artificial intelligence (AI bzw. A. I.) ist ein Teilgebiet der Informatik, welches sich mit der Automatisierung
+        intelligenten Verhaltens und dem maschinellen Lernen befasst. Der Begriff ist insofern nicht eindeutig
+        abgrenzbar, als es bereits an einer genauen Definition von „Intelligenz“ mangelt. Dennoch wird er in Forschung
+        und Entwicklung verwendet. </p>
+
+
+    <h3> Digitalisierung </h3>
+
+    <ol class="c">
+        <li>Item 1</li>
+        <ul class="b">
+            <li>Item 1.1</li>
+            <li>Item 1.2 </li>
+            <ul class="a">
+                <li>Item1.2.1</li>
+            </ul>
+        </ul>
+        <li> Item 2</li>
+    </ol>
+
+
+    <table class="schoneTabele">
+        <tr>
+            <td>Erste Spalte</td>
+            <td> Zweite Spalte</td>
+        </tr>
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+        </tr>
+        <tr>
+            <td>Item 1.1</td>
+            <td>Item 2.1</td>
+        </tr>
+    </table>
+    <p class="custom-font"> Weltweit ist Digitalisierung wichtig.Die digitale Transformation stellt Organisationen
+        laufend vor neue Herausforderungen. Nahezu täglich werden wir in unserem Berufs- und Privatleben mit neuen
+        Technologien konfrontiert. Globale Entwicklungen und fortschreitende Digitalisierung modifizieren Prozesse und
+        altgediente Systeme. Wer mit dieser Entwicklung nicht Schritt halten kann, verliert schnell sein etabliertes
+        Image und hochqualifizierte MitarbeiterInnen, was sich schlussendlich auch auf den wirtschaftlichen Erfolg
+        auswirkt.</p>
+
+    <p class="letzteP"> <em>Zukunftsfähige Organisationen hinterfragen ihre Strukturen, Prozesse und Arbeitsweisen
+            kritisch in Hinblick auf die neuen Rahmenbedingungen. Ein innovatives Mindset sowie die Entwicklung neuer
+            Kompetenzen und Arten der Zusammenarbeit auf allen Teamebenen sind ihnen wichtig.</em> Dank unserer
+        langjährigen Erfahrung in der Zusammenarbeit mit großen Technologieunternehmen sind wir ein erfahrener Partner
+        auf Ihrem Weg in eine spannende Zukunft. Dabei verfolgen wir einen ganzheitlichen Ansatz, denn die digitale
+        Transformation ist für uns mehr als nur die Einführung von neuen Technologien. </p>
+
+    <dl>
+        <dt>
+            <dfn> Nötige literatur:</dfn>
+        </dt>
+        <dd>Schrödinger lernt HTML5, CSS und Java Script</dd>
+        <dd>Schrödinger lernt Java</dd>
+    </dl>
+
+    <img src="ki1.jpg" alt="Bildbeschreibung" height="400" width="400">
+
+    <form action="" method="post">
+        <input type="hidden" name="verstecktes Feld" value="ich hab hier was">
+
+        <div class="block element abstand">
+            <label for="namen"> Gibt deinen Namen ein </label>
+            <br>
+            <input id="namen" placeholder="Gib deinen Namen ein" name="Namen" max.length="15">
+            <br>
+            <button type="submit">Absenden</button>
+        </div>
+
+        <div class="block element abstand">
+            <label for="pass"> Gibt deinen Passwort ein </label>
+            <br>
+            <input id="passwort" placeholder="Gib deinen Passwort ein" name="Passwort" max.length="15">
+            <br>
+            <button>Absenden</button>
+        </div>
+
+        <div class="block element abstand">
+            <p>Geschlecht</p>
+            <label for="geschlecht_m">Mannlein</label>
+            <input type="radio" name="Geschlecht" value="m" id="geschlecht_m" checked="checked">
+            <label for="geschlecht_w">Weblein</label>
+            <input type="radio" name="Geschlecht" value="w" id="geschlecht_w">
+            <label for="geschlecht_a">Anderes</label>
+            <input type="radio" name="Geschlecht" value="a" id="geschlecht_a">
+        </div>
+
+        <div class="block element abstand">
+            <p>Welche Programmierungssprache kennst du?</p>
+
+            <select class="abstand" name="Programmierungssprachen" multiple="multiple">
+                <optgroup label="Frontend">
+                    <option value="HTML"> HTML </option>
+                    <option value="CSS"> CSS </option>
+                    <option value="Java Script"> Java Script </option>
+                </optgroup>
+                <optgroup label="Backeend">
+                    <option value="Java"> Java </option>
+                    <option value="Objective C"> Objective C </option>
+                    <option value="Swift"> Swift </option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="block element abstand">
+            <p> Wie gut kennst du Programmierungssprachen?</p>
+            <input class="abstand" type="text" list="adjektive" name="zusatz[]">
+            <datalist id="adjektive">
+                <option value="Ausreichend"></option>
+                <option value="Sehr gut"></option>
+                <option value="Gut"></option>
+                <option value="Genugend"></option>
+                <option value="Keine Kenntnisse"></option>
+            </datalist>
+        </div>
+
+        <div class="block element abstand">
+            <p>Geben Sie Kommentare!</p>
+            <textarea class="abstand" name="Kommentar cols=" 20" rows="25">Kommentare eintragen</textarea>
+        </div>
+
+
+    </form>
+    <footer>
+        <p>Posted by: Natalia Radojcic</p>
+        <p>Contact information: <a href=mailto:natalia.radojcic@gmail.com</a>natalia.radojcic@gmail.com</p>
+    </footer>
+
+
+
+</body>
+
+</html>

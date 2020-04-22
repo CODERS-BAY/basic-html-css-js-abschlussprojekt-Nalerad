@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Handyweitwurf</title>
+
+    <style>
+        section {
+            background-image: URL(https://images.unsplash.com/photo-1536244636800-a3f74db0f3cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+            background-size: cover;
+            text-align: center;
+        }
+
+        .container {
+            opacity: 0.5;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-secondary text-white">
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Handyweitwurf</span>
+            <img src="img/monster.jpg" height="100" width="150" >
+        </nav>
+    </header>
+    
+    <section>
+        <h3>Willst du mit einem Handy ein Monster abschießen?</h3> 
+        <h4 >Dein Treffer ist von Wurfsgeschwindigkeit und Wurfwinkel abhängig.</h4>
+        <h5>Gehts los!</h5>
+        <form class="container my-5 col-md-5">
+
+            <div class="form-group py-3">
+                <label for="exampleFormControlSelect2">Wo möchtest du spielen? <i class="fa fa-globe" style="font-size:24px"></i></label>
+                <select id="planet" multiple class="form-control">
+                    <option value="0">Erde</option>
+                    <option value="1">Mond</option>
+                    <option value="2">Mars</option>
+                    <option value="3">Jupiter</option>
+                </select>
+                <button type="button" onclick="planetWaehlen()" class="btn btn-secondary mb-2">Wähle einen Planet</button>
+            </div>
+        </form>
+        <form class="container my-5 col-md-5">
+                <div class="form-group py-3">
+                    <label for="exampleInputPassword1">Gib die "Schnellflügeln" zu deinem Handy!</label>
+                    <input type="number" class="form-control" id="geschwindigkeit" placeholder="Nummer">
+                
+                    <label for="exampleInputPassword1">Wie hoch soll das Handy fliegen?</label>
+                    <input type="number" class="form-control" id="winkel" placeholder="Nummer">
+                    <button id="playButton" type="button" onclick="play()" class="btn btn-secondary mb-2">Schuss</button>
+                </div>
+        </form>
+    </section>
+    <section class="container border border dark col-md-5 py-3">
+
+        <i class="fa fa-calculator" style="font-size:24px"></i>
+        <i class="fa fa-mail-forward" style="font-size:36px"></i>
+        <i class="fab fa-optin-monster" style="font-size:60px"></i>
+        <p>Runden: <span id="runden">0</span></p>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        const ERDE = 9.81;
+        const MOND = 1.62;
+        const MARS = 3.69;
+        const JUPITER = 24.79;
+        // var wahlSpieler = ;
+        var g;
+        //var versuche=;
+        //var derWinkel;
+        var wurfweite;
+        var playButton = document.getElementById('playButton');
+      //  var v0 = document.getElementById('Geschwindigkeit').value;
+        //var derWinkel = document.getElementById('Winkel').value;
+        //var wurfweite = ((v0 * v0) * Math.sin(2 * derWinkel)) / g
+        var counter = 0;
+
+        var entfernungZumMonster = Math.random() * 90 + 10;
+        entfernungZumMonster= Math.round (entfernungZumMonster);
+
+        function planetWaehlen() {
+            // wahlSpieler = wahlSpieler.value;
+            g = document.getElementById("planet").value;
+            g = parseInt(g);
+            console.log(g);
+            if (g == 0) {
+                g = ERDE;
+            }
+            if (g == 1) {
+                g = MOND;
+            }
+            if (g == 2) {
+                g = MARS;
+            }
+            if (g == 3); {
+                g = JUPITER;
+            }
+        }
+
+
+
+        function play() {
+            var derWinkel = document.getElementById('winkel').value;
+            var v0 = document.getElementById('geschwindigkeit').value;
+            derWinkel = derWinkel * (Math.PI / 180);
+            wurfweite = ((v0 * v0) * Math.sin(2 * derWinkel)) / g;
+            wurfweite = Math.round(wurfweite);
+    
+            var versuche=2;//start um 0
+           
+                if(counter==versuche) {
+                    alert("Du hast verloren.")
+                    playButton.disabled=true;
+                    
+                }
+                if (wurfweite == entfernungZumMonster) {
+                    alert("Gratuliere! Du hast den Monster getroffen.");
+                    playButton.disabled=true;
+                    
+                }
+                if (wurfweite < entfernungZumMonster) {
+                    alert("Scwacher Treffer! Probier nochmal");
+                    counter++;
+                    runden.innerHTML = counter;
+                    console.log(counter);
+                   
+                }
+                if (wurfweite > entfernungZumMonster) {
+                    alert("Zu stark geworfen. Probier nochmal");
+                    counter++;
+                    runden.innerHTML = counter;
+                    console.log(counter);
+                }
+              
+                }
+            
+        
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.custom-font  {
+    color:rgb(0, 38, 255);
+    font-size:1em;
+    text-align:justify;
+}
+.custom-bg {
+    background-color: orange; 
+    /* width: fit-content;  */
+   
+}
+h1 {
+    text-align: center;
+}
+body {
+    font-size: 2em;
+}
+
+.a {
+    list-style-type: circle;
+
+}
+.b {
+    list-style-type: lower-alpha;
+}
+
+.c {
+    border-color: orange;
+    border-width: 3px;
+    border-style: solid;
+    border:auto;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schoneTabele {
+    border-color: aqua;
+    border-width: thick;
+    border-collapse: separate;
+    border-style: dashed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(odd) {
+    background: yellowgreen;
+}
+
+p:nth-child(3n) {
+    background:yellowgreen;
+}
+.letzteP {
+    text-decoration: underline;
+    text-align:justify;
+}
+
+.block.element.abstand {
+    background-color:rgb(29, 129, 211);
+    padding:10px;
+    margin:20px;
+    border: 5px solid;
+    width: 600px;
+    border-radius:20px;   
+}
+form {
+    background-color: rgb(196, 224, 224);
+    padding: 10px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    
+}
+::placeholder {
+    color:rgb(26, 20, 20);
+    font-weight: bold;
+    background-color: yellow;
+
+}
+.abstand {
+    display: block;
+}
+body {
+    opacity: 75%;
+    background-size: contain;
+}
+img {
+    margin-left:550px ;
+    border-color: royalblue;
+    border-style: solid;
+   
+}
+
+

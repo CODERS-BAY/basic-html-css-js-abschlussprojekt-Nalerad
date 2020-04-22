@@ -1,0 +1,46 @@
+.background {
+    background-color:yellowgreen
+   
+}
+.flex-container {
+    display:flex;
+}
+.paragraph {
+    font-family:cursive;
+    font-size:12pt;
+    border-style: solid;
+    border-color: darkgreen;
+    background-color: yellowgreen;
+    padding: 20px 20px 20px 20px;
+    text-align:justify;
+    
+}
+.heading {
+    text-align: center;
+    transform: rotate(-10deg);
+
+}
+.head {
+    background-color: darkgreen;
+}
+.spalten {
+    padding:20px;
+    font-family: cursive;
+    column-count: 2;
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-width:10em;
+    text-align: justify;
+    border-style: solid;
+}
+.block.element.abstand {
+    font-family: cursive;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
+   text-align: center;
+}
+.par {
+    font-family:cursive;
+    font-size:12pt;
+    text-align: center;
+}
